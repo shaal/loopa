@@ -1,0 +1,14 @@
+uuid: 76f8cbac-a810-442e-93a1-650854270f2c
+name: loopa
+mail: aviv@3paces.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
