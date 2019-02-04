@@ -1,0 +1,20 @@
+uuid: 82c4cdfc-e23e-4854-9280-85246ca7120d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrapsass
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bootstrapsass_local_actions
+theme: bootstrapsass
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 51c81e70-eed8-470f-9d11-3f014b3123bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrapsass
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: bootstrapsass_branding
+theme: bootstrapsass
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

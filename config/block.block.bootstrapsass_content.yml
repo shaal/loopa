@@ -1,0 +1,22 @@
+uuid: 74c19f62-7db6-40f0-8d71-981af9e8b981
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrapsass
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bootstrapsass_content
+theme: bootstrapsass
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
