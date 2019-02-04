@@ -1,0 +1,16 @@
+name: loopa
+recipe: pantheon
+config:
+  framework: drupal8
+  xdebug: true
+  site: loopa
+  id: 42f3c52c-8398-47e3-b14e-51576f4f65a5
+tooling:
+  drush:
+    cmd:
+      - "/app/vendor/bin/drush"
+  drupal:
+    cmd:
+      - "/app/vendor/bin/drupal"
+      - "--root=/app/web"
+

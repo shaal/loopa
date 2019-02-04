@@ -1,0 +1,99 @@
+// Default variables.
+@import "default-variables";
+// Bootstrap Framework.
+@import "../bootstrap/assets/stylesheets/bootstrap";
+// Base-theme overrides.
+@import "overrides";
+
+// adding internal scss files
+@import "frontpage.scss";
+@import "navigation.scss";
+@import "regions.scss";
+@import "taxonomy.scss";
+@import "footer.scss";
+
+/**
+ * Place your custom styles here.
+ */
+
+// making bootstrap 100% wide + slick, without overflow or white space.
+section.col-sm-12 {
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat !important;
+}
+
+#intro {
+
+  background: url("../images/layer_37.png") no-repeat center center;
+  position: relative;
+  background-size: cover;
+
+}
+
+.add-features {
+  ul {
+    list-style-image: url("/sites/default/files/images/additional_features_bullet.png");
+    list-style-position: outside;
+    padding-left: 33px;
+    li {
+      padding-right: 39px;
+    }
+  }
+}
+
+.technical-spec {
+  table {
+    tr:nth-child(odd) {
+      background-color: #dddddd;
+    }
+  }
+}
+
+#loopa-footer{
+  background-color: #ffd717;
+  padding: 0 20px;
+  img {
+    width: 180px;
+  }
+  p {
+    &.ftr-link {
+      padding-top: 25px;
+    }
+    &.ftr-company {
+      padding-top: 25px;
+    }
+    &.ftr-address {
+      padding-top: 5px;
+    }
+    &.ftr-phone {
+      padding-top: 25px;
+    }
+    &.ftr-mail2 {
+      padding-top: 25px;
+    }
+  }
+}
+
+.rectangle {
+  background-color: #ffd917;
+  height: 26px;
+
+}
+.intro-image {
+  float: right;
+}
+.intro-text {
+  font-family: Montserrat, serif;
+  text-align: center;
+  font-size: 60px;
+}
+footer  {
+
+  p{
+    text-align: center;
+    font-size: 12px;
+  }
+}

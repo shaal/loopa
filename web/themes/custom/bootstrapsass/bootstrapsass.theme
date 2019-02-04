@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+
+use Drupal\taxonomy\Entity\Term;
+
+function bootstrapsass_theme_suggestions_page_alter(&$suggestions, &$vars) {
+
+    if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+        $term = Term::load($tid);
+        $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
+    }
+
+    // https://www.drupal.org/node/2521876
+    // Add content type suggestions for pages
+    if ($node = \Drupal::request()->attributes->get('node')) {
+        array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
+    }
+    // http://drupal.stackexchange.com/questions/205567/template-suggestions-based-off-url-alias-drupal-8
+    // Add suggestions according to path
+    $current_path = \Drupal::service('path.current')->getPath();
+    $result = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+
+    $path_alias = trim($result, '/');
+    $path_alias = str_replace(['/','-'], '_', $path_alias);
+
+    $suggestions[] = 'page__path_alias__'.$path_alias;
+}
+
+
+/**
+ * Load specific library for pages with html attribute according to direction.
+ */
+function bootstrapsass_preprocess_html(&$variables) {
+
+  // Load specific library for pages with html attribute of RTL.
+  if ($variables['html_attributes']['dir'] == 'rtl') {
+    $variables['#attached']['library'][] = 'bootstrapsass/rtl';
+    $variables['langdir'] = 'rtl';
+  }
+  else {
+    // Load specific library for pages with html attribute of LTR.
+    if ($variables['html_attributes']['dir'] == 'ltr') {
+      $variables['#attached']['library'][] = 'bootstrapsass/ltr';
+      $variables['langdir'] = 'ltr';
+    }
+  }
+}
+
+function bootstrapsass_preprocess_block(&$variables) {
+  $variables['base_path'] = base_path();
+  $variables['theme_path'] = base_path() . $variables['directory'];
+}

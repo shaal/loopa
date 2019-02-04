@@ -1,0 +1,59 @@
+/*
+.view-front-page-cards {
+  display: flex;
+  justify-content: space-around;
+}
+*/
+.view-front-page-cards .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 1em; }
+  .view-front-page-cards .view-content > div {
+    width: 32%; }
+    .view-front-page-cards .view-content > div .card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 1em;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      text-decoration: none;
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.1); }
+      .view-front-page-cards .view-content > div .card:hover {
+        background: rgba(0, 0, 0, 0.05); }
+      .view-front-page-cards .view-content > div .card .img-responsive {
+        width: 100%; }
+      .view-front-page-cards .view-content > div .card .card-title {
+        padding: 0.5em;
+        color: white;
+        background: black; }
+      .view-front-page-cards .view-content > div .card .card-body {
+        padding-top: 0.5em; }
+      .view-front-page-cards .view-content > div .card .card-link {
+        width: 100px;
+        margin-top: 1em;
+        padding: 0.5em;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        -ms-flex-item-align: end;
+        align-self: flex-end; }
+  @media only screen and (max-width: 767px) {
+    .view-front-page-cards .view-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .view-front-page-cards .view-content > div {
+        width: 100%; } }
+
+/*# sourceMappingURL=frontpage.css.map */

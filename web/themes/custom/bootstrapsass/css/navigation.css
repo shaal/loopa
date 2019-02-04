@@ -1,0 +1,91 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./bootstrapsass/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+.navigation-region.col-md-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.top-navigation-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .top-navigation-region span.spacer {
+    padding: 0 1em; }
+
+.navbar-header {
+  width: 100%; }
+
+.menu-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto; }
+
+html[dir=rtl] .navbar-toggle {
+  float: right;
+  margin-right: 2em;
+  margin-bottom: 2em; }
+
+html[dir=ltr] .navbar-toggle {
+  float: left; }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none; }
+
+nav#block-bootstrapsass-main-menu {
+  margin: 0 auto; }
+
+div#block-bootstrapsass-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 10%;
+  padding: 2em 10%;
+  background: url("../images/topPatternTile.gif");
+  background-repeat-y: no-repeat; }
+
+.form-type-search.form-group {
+  margin: 0; }
+
+form#search-block-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none; }
+  .navbar-toggle {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .menu-search {
+    display: none; } }
+
+/*# sourceMappingURL=navigation.css.map */

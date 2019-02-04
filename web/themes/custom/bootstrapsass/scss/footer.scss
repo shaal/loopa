@@ -1,0 +1,13 @@
+.footer-additional-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span.spacer {
+    padding: 0 1em;
+  }
+}
+
+.footer-info > div {
+  text-align: center;
+}

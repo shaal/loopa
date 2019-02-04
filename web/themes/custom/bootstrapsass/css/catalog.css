@@ -1,0 +1,99 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./bootstrapsass/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+/**
+ * Place your custom styles here.
+ */
+.path-catalog .main-container {
+  background-color: #f5f5f5;
+  padding-top: 50px; }
+  .path-catalog .main-container .catalog-container .region-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .path-catalog .main-container .catalog-container .region-content .main-header {
+      display: none; }
+    .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row {
+        -webkit-box-flex: 300px;
+        -ms-flex: 300px 0 1;
+        flex: 300px 0 1;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background-image: url("../images/catalog_product_bg.png");
+        background-size: cover;
+        -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3)); }
+        .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 10px;
+          padding-bottom: 0;
+          height: 350px;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a:hover {
+            text-decoration: none; }
+          .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a .product-image {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1; }
+          .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a .product-title {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 2px 0;
+            text-transform: uppercase;
+            color: black;
+            height: 3.8em;
+            line-height: 1.2em;
+            width: 100%; }
+          .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a .product-colors {
+            -ms-flex-item-align: start;
+            align-self: flex-start; }
+            .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a .product-colors ul {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              margin-top: 10px;
+              margin-bottom: 0px;
+              padding: 0;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+              .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a .product-colors ul li {
+                list-style: none;
+                border: 2px solid black;
+                padding: 2px;
+                border-radius: 3px;
+                margin-right: 10px;
+                margin-bottom: 10px; }
+                .path-catalog .main-container .catalog-container .region-content .view-catalog .view-content .views-row .field-content > a .product-colors ul li .color span {
+                  display: none; }
+
+/*# sourceMappingURL=catalog.css.map */

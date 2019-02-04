@@ -1,0 +1,38 @@
+/* hebrew font */
+body {
+	font-family: 'Open Sans Hebrew', sans-serif;
+}
+/*
+
+@font-face{
+	font-family:'atlas-pro';
+	font-weight:500; !*(medium)*!
+	font-style: normal;
+	src: url('../fonts/atlas-pro-aaa-500.eot');
+	src: url('../fonts/atlas-pro-aaa-500.eot#iefix') format('embedded-opentype'),
+		url('../fonts/atlas-pro-aaa-500.woff') format('woff'),
+		url('../fonts/atlas-pro-aaa-500.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'ambivalenti-tzar';
+	font-weight:300; !*(light)*!
+	font-style: normal;
+	src: url('../fonts/ambivalenti-tzar-aaa-300.eot');
+	src: url('../fonts/ambivalenti-tzar-aaa-300.eot#iefix') format('embedded-opentype'),
+		url('../fonts/ambivalenti-tzar-aaa-300.woff') format('woff'),
+		url('../fonts/ambivalenti-tzar-aaa-300.ttf') format('truetype');
+}
+
+body {
+		font-family:   sans-serif;
+		font-weight:   500;
+		font-size:     18px;
+	}
+
+h1,h2,h3,h4,h5 {
+		font-family:   sans-serif;
+		font-weight:   300;
+		font-size:     30px;
+	}
+*/

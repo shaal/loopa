@@ -1,0 +1,100 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./bootstrapsass/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+/**
+ * Place your custom styles here.
+ */
+.main-container {
+  background-color: transparent; }
+  .main-container .region-content {
+    max-width: 1200px;
+    margin: auto; }
+    .main-container .region-content .commerce-product {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .main-container .region-content .commerce-product .left-side {
+        max-width: 60%; }
+        .main-container .region-content .commerce-product .left-side .product-title h1 {
+          font-size: 23px;
+          text-transform: uppercase;
+          border-bottom: 5px solid #2d3852;
+          padding-bottom: 15px;
+          margin: 0;
+          color: #2d3852; }
+        .main-container .region-content .commerce-product .left-side .retail {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          border-bottom: 5px solid #2d3852;
+          padding: 15px 0;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .main-container .region-content .commerce-product .left-side .retail .field--name-price {
+            font-size: 36px;
+            color: #b52931; }
+            .main-container .region-content .commerce-product .left-side .retail .field--name-price .field--label {
+              display: none; }
+          .main-container .region-content .commerce-product .left-side .retail .add-to-cart .form-group {
+            margin-bottom: 0; }
+          .main-container .region-content .commerce-product .left-side .retail .add-to-cart .btn-success {
+            background-color: white;
+            border: 2px solid #2d3852;
+            border-radius: 0;
+            color: #2d3852;
+            text-transform: uppercase;
+            font-size: 18px; }
+        .main-container .region-content .commerce-product .left-side .size-length-color {
+          padding: 15px 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          border-bottom: 5px solid #2d3852; }
+          .main-container .region-content .commerce-product .left-side .size-length-color .field--label {
+            color: #b52931;
+            text-transform: uppercase;
+            font-size: 16px; }
+          .main-container .region-content .commerce-product .left-side .size-length-color .color {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .main-container .region-content .commerce-product .left-side .size-length-color .color .field--name-field-colr-image {
+              padding: 1px;
+              border: 1px solid black; }
+            .main-container .region-content .commerce-product .left-side .size-length-color .color span {
+              padding-left: 5px; }
+        .main-container .region-content .commerce-product .left-side .highlighted-features {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+        .main-container .region-content .commerce-product .left-side .spec {
+          padding-top: 15px; }
+          .main-container .region-content .commerce-product .left-side .spec .field--label {
+            color: #b52931;
+            font-size: 22px;
+            margin-bottom: 15px; }
+      .main-container .region-content .commerce-product .right-side {
+        max-width: 35%; }
+
+/*# sourceMappingURL=product.css.map */

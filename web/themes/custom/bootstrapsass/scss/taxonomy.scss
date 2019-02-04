@@ -1,0 +1,50 @@
+// Default variables.
+@import "default-variables";
+// Bootstrap Framework.
+// @import "../bootstrap/assets/stylesheets/bootstrap";
+// Base-theme overrides.
+// @import "overrides";
+/*// @import 'super-login-css/super-login.scss';
+@import 'login.scss';
+@import 'catalog.scss';
+@import 'product.scss';
+@import 'fullscreen-video.scss';*/
+
+/**
+ * Place your custom styles here.
+ */
+
+.taxonomy__topics-list {
+  margin-bottom: 4em;
+  hr {
+    margin: 5px 0;
+  }
+}
+
+.topics__summary-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+[dir=ltr] .topics__summary-link__summary {
+  padding-right: 1em;
+}
+
+[dir=rtl] .topics__summary-link__summary {
+  padding-left: 1em;
+}
+
+.topics__summary-link__link {
+  width: 12em;
+  padding: 0.3em;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+
+  align-self: flex-start;
+}
+
+.timeline-taxonomy .view-content {
+  margin-top: 2em;
+
+  direction: ltr;
+}

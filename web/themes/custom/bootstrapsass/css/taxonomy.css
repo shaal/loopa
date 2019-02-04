@@ -1,0 +1,52 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./bootstrapsass/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+/*// @import 'super-login-css/super-login.scss';
+@import 'login.scss';
+@import 'catalog.scss';
+@import 'product.scss';
+@import 'fullscreen-video.scss';*/
+/**
+ * Place your custom styles here.
+ */
+.taxonomy__topics-list {
+  margin-bottom: 4em; }
+  .taxonomy__topics-list hr {
+    margin: 5px 0; }
+
+.topics__summary-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+[dir=ltr] .topics__summary-link__summary {
+  padding-right: 1em; }
+
+[dir=rtl] .topics__summary-link__summary {
+  padding-left: 1em; }
+
+.topics__summary-link__link {
+  width: 12em;
+  padding: 0.3em;
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.timeline-taxonomy .view-content {
+  margin-top: 2em;
+  direction: ltr; }
+
+/*# sourceMappingURL=taxonomy.css.map */

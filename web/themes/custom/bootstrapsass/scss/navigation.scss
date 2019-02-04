@@ -1,0 +1,84 @@
+// Default variables.
+@import "default-variables";
+
+.navigation-region.col-md-12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-navigation-region {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span.spacer {
+    padding: 0 1em;
+  }
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+
+.menu-search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+}
+
+html[dir=rtl] .navbar-toggle {
+  float: right;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+html[dir=ltr] .navbar-toggle {
+  float: left;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
+nav#block-bootstrapsass-main-menu {
+  margin: 0 auto;
+}
+
+div#block-bootstrapsass-search {
+  display: flex;
+  padding: 1em 10%;
+  padding: 2em 10%;
+  background: url("../images/topPatternTile.gif");
+
+  background-repeat-y: no-repeat;
+}
+
+.form-type-search.form-group {
+  margin: 0;
+}
+
+form#search-block-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-search {
+    display: none;
+  }
+}

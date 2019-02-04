@@ -1,0 +1,165 @@
+/**
+ * Place your custom styles here.
+ */
+/* make video full screen */
+/* https://codepen.io/dudleystorey/pen/PZyMrd */
+/*{ box-sizing: border-box; }*/
+/*
+.smaller {
+  height: 80vh;
+background-color: green;
+}
+
+.part-one {
+  border: 1px solid red;
+}
+.part-two{
+  border: 1px solid green;
+  background: transparent;
+}
+.part-one,
+.part-two{
+  height: calc(100vh - 100px);
+  position: relative;
+  background: white;
+}
+*/
+/* Preventing the huge video from bleeding to other sections of the homepage */
+@media screen and (min-width: 1200px) {
+  section#hero-video {
+    display: block;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 450px; } }
+
+@media screen and (min-width: 1200px) {
+  .video-background,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; } }
+
+@media screen and (min-width: 1200px) and (min-aspect-ratio: 16 / 9) {
+  .video-background {
+    height: 300%;
+    top: -100%; } }
+
+@media screen and (min-width: 1200px) and (max-aspect-ratio: 16 / 9) {
+  .video-background {
+    width: 300%;
+    left: -100%; } }
+
+@media screen and (max-width: 1199px) {
+  .video-background {
+    display: none; }
+  #vidtop-content {
+    position: relative;
+    height: calc(100vh - 71px);
+    background-image: url(../images/electron-video2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 550px; } }
+
+/*@media screen and (min-width: 1200px) {*/
+#vidtop-content {
+  top: 0;
+  color: #fff; }
+
+.vid-info-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+@media screen and (max-width: 1199px) {
+  .vid-info-bg {
+    bottom: 0; } }
+
+.vid-info {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+/* Retina */
+/* fixing a bug with iphone and ipads */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .vid-info {
+    top: 50%; } }
+
+/* fix titles on iphone5 landscape */
+@media screen and (max-height: 320px) {
+  .vid-info {
+    position: static;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .scroll-down-message {
+    position: static; } }
+
+.vid-info h1 {
+  font-size: 33px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.paragraph--type--para-text {
+  position: relative;
+  top: -10px; }
+
+.vid-info p {
+  margin-bottom: 3px; }
+
+.vid-info a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: .6s background;
+  transition: .6s background;
+  border-bottom: none;
+  margin: 1rem auto;
+  text-align: center; }
+
+.scroll-down-message img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  width: 35px;
+  margin-bottom: 15px; }
+
+.scroll-down-message {
+  position: absolute;
+  z-index: 500;
+  color: white;
+  left: 50%;
+  text-align: center;
+  font-size: 13px;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: 10%; }
+
+.scroll-down-message:hover {
+  bottom: 9%; }
+
+@media screen and (max-width: 1199px) {
+  .scroll-down-message {
+    bottom: 2%; }
+  .scroll-down-message:hover {
+    bottom: 1%; } }
+
+/*# sourceMappingURL=fullscreen-video.css.map */

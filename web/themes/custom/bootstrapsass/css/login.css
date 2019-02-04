@@ -1,0 +1,77 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./bootstrapsass/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+/**
+ * Place your custom styles here.
+ */
+.path-user .main-container .main-header {
+  width: 100vw;
+  background-color: black;
+  background-image: url("../images/banner/login.jpg");
+  background-size: cover;
+  height: 300px;
+  background-position-x: center; }
+  .path-user .main-container .main-header h1.page-header {
+    background-color: white;
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: 5%;
+    padding: 10px;
+    position: relative;
+    border: none; }
+    @media (max-width: 1199px) {
+      .path-user .main-container .main-header h1.page-header {
+        margin-left: 5%; } }
+    .path-user .main-container .main-header h1.page-header:after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/white_badge_edge.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      bottom: 0;
+      width: 200%;
+      right: -199%; }
+
+.path-user .main-container .region.region-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  background-color: #2d3852;
+  max-width: 320px;
+  margin: 100px auto;
+  padding: 20px; }
+  .path-user .main-container .region.region-content form:before {
+    content: "";
+    position: absolute;
+    background-color: #f5f5f5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; }
+  .path-user .main-container .region.region-content form a {
+    color: #94c2ef; }
+  .path-user .main-container .region.region-content form button.form-submit {
+    background-color: #94c2ef;
+    color: #2b3552; }
+  .path-user .main-container .region.region-content form div#edit-timezone--content {
+    color: #2d3852; }
+
+/*# sourceMappingURL=login.css.map */
